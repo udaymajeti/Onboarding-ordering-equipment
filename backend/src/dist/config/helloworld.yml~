@@ -1,0 +1,24 @@
+server:
+  rootPath: /api/*
+  applicationContextPath: /
+  applicationConnectors:
+    - type: http
+      port: 8080
+
+allowedOrigins:
+    - "*"
+
+template: Hello, %s!
+defaultName: Strange
+
+#db settings
+database:
+  #the name of db, h2 in our case
+  driverClass: org.h2.Driver
+  #JDBC URL
+  url: 'jdbc:h2:./target/Softhouse'
+  #username
+  user: sa
+  #password
+  password: 
+
