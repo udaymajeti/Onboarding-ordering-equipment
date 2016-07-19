@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8"/>
+    <title>frontend</title>
+    <!-- inject:vendor:css -->
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/todo/todo.css">
+    <!-- endinject -->
+  </head>
+  <body>
+
+    <h1>frontend</h1>
+
+    <ng-view></ng-view>
+    <!-- inject:vendor:js -->
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-route/angular-route.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+      <script src="/todo/todo.js"></script>
+      <script src="/todo/todo-controller.js"></script>
+      <script src="/js/npm.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+      <script src="/js/bootstrap.js"></script>
+      <script src="/view.js"></script>
+      <script src="/login-controller.js"></script>
+      <script src="/frontend-templates.js"></script>
+      <!-- endinject -->
+
+    <a ng-href="login-base.html">Redirect to Login Page</a>
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+
+<ul class="todo-list">
+
+
+    <style>
+        table, th , td  {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        table tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+    </style>
+
+
+  <table>
+    <thead>
+    <tr>
+      <th ng-repeat="(header, value) in names[0]">
+        {{header}}
+      </th>
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr ng-repeat="row in names ">
+      <td ng-repeat="cell in row">
+        {{cell}}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</ul>
